@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    
+	<title>JSF Bookings</title>
+	<link rel = "stylesheet" href="/static/homepage.css">
+
+</head>
+
+	<header>
+    <br><h1>JSF Cribs</h1><br>
+	<a href = "/"><div id = "logolocation"> <img src="/static/logo.png" alt="JSF Cribs Logo"> </div></a>
+	</header>
+    
+    <div id ="navloc">
+	<nav>
+    <ul class="menuitem">	
+    <li><a href="#c"><p>Contact </p></a></li>
+    <li><a href ="locAtt"><p> Local Attraction </p></a></li>
+    <li><a href ="reviews"><p> Reviews </p></a></li>
+	</ul>	
+    </nav>
+    </div>
+    
+    	<div id="main">
+<h2> Bookings </h2>
+<center>
+
+<form action = "addbooking" method = "post" > 
+    <br>Name: <input type = "text" name = "name" placeholder "name"> 
+    <br>
+    <br>Email: <input type = "text" name = "email" placeholder "email">
+    <br>
+    
+    <! in order to get the date in the correct format we changed
+    the input type from date to text and then have it only accept
+    values that are displayed in the required date format (same applies for reviews) >
+    
+    <br>Check-In date: <input type="date" name="check-in"  title="Check-In DD-MM-YYYY"/>
+    <br>
+    <br>Check-Out date: <input type="date" name="check-out"  title="Check-Out DD-MM-YYYY"/>
+    <input type = "submit" value = "Submit" > 
+    
+</form>
+<br><br>
+
+
+
+<h3>Reservations</h3>
+<table border="1"> 
+<tr>
+<th>Check-In</th>
+<th>Check-Out</th>
+{% for i in bookings %}
+</tr>
+	<tr>
+		<td> Reservation {{loop.index}} </td>
+		<td> rent period starting on {{i[2]}} to {{i[3]}}. Status: {{i[4]}}</td>
+		<! In order to hide the personal information we only displayed the 3rd and 4th value from the array meaning that we are hiding the 1st and 2nd (name i{0} and email i{1}) we also created a 5th value for
+		the status so that the rental can be approved or denied>
+	</tr>
+{% endfor %}
+</table> 
+</center>
+
+	<h2 id="c">Contact</h2>
+	<center>
+	<u><b>Email:</b></u> <a href="mailto:enquiries@jsfcribs.co.uk" target="_top">enquiries@jsfcribs.co.uk</a><br>
+    <u><b>Telephone:</b></u> 02085463591
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=otentic%20eco%20tent%20mauritius&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+	<a href="https://www.pureblack.de/webdesign-hannover/"></a></div>
+	<style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+	</div>	
+	</center>	
+	</div>
+
+
+
+<footer>
+© JSF Cribs
+</footer>	
+</body>
+
+</html>

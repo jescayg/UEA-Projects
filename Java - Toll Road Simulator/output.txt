@@ -1,0 +1,100 @@
+run:
+OE08OQF: 900 added successfully
+CJ65DVB: 600 added successfully
+UJ12CRW: 900 added successfully
+KR60XNS: Trip completed successfully
+ZM02EUX: Trip completed successfully
+CE02ESF: Trip completed successfully
+JT11YMK:makeTrip failed. CustomerAccount does not exist
+LO17FFK: Trip completed successfully
+GV14RRM: Trip completed successfully
+ZR60JGI: Trip completed successfully
+GP66KQL: Trip completed successfully
+ZR60JGI: 4000 added successfully
+GV14RRM: Trip completed successfully
+QJ55HTR: Trip completed successfully
+HQ09WIJ: Trip completed successfully
+WQ10FZI:makeTrip failed. CustomerAccount does not exist
+ZR60JGI: Trip completed successfully
+YS06ESV: Trip completed successfully
+ZJ04XSG: Trip completed successfully
+ZJ04XSG: Trip completed successfully
+ZJ04XSG: 2000 added successfully
+TR52YTU:makeTrip failed. CustomerAccount does not exist
+CJ65DVB: Trip completed successfully
+OG57MWO:makeTrip failed. CustomerAccount does not exist
+ZQ11PMI:makeTrip failed. CustomerAccount does not exist
+BB14UPJ: Trip completed successfully
+RD16GDY: Trip completed successfully
+IL12KYE: Trip completed successfully
+BQ63HWH:makeTrip failed. CustomerAccount does not exist
+ZR60JGI: Trip completed successfully
+QM17VBV:makeTrip failed. CustomerAccount does not exist
+ND53BHO: Trip completed successfully
+OD14STV: Trip completed successfully
+CJ65DVB: Trip completed successfully
+NK62WPC: Trip completed successfully
+HE52JEL: 500 added successfully
+IL12KYE: Trip completed successfully
+HI14WRW: Trip completed successfully
+FL55YST:makeTrip failed. CustomerAccount does not exist
+EK02DEU:makeTrip failed. CustomerAccount does not exist
+JH67HRE: Trip completed successfully
+LU16KLS: 1500 added successfully
+RD16GDY: Trip completed successfully
+HE52JEL: Trip completed successfully
+HE52JEL: 1000 added successfully
+HE57YSO: Trip completed successfully
+NK62WPC: 15000 added successfully
+CI60ESO:makeTrip failed. CustomerAccount does not exist
+ZJ04XSG: Trip completed successfully
+YL09PTN: Trip completed successfully
+VS56SYX: Trip completed successfully
+OD14STV: Trip completed successfully
+QJ55HTR: 900 added successfully
+CE02ESF: Trip completed successfully
+RD16GDY: Trip completed successfully
+YJ55XPM: 1000 added successfully
+LU16KLS: Trip completed successfully
+TY62BSA:makeTrip failed. CustomerAccount does not exist
+UJ12CRW: Trip completed successfully
+JH67HRE: Trip completed successfully
+YJ55XPM: Trip completed successfully
+CJ65DVB: Trip completed successfully
+HQ09WIJ: 1100 added successfully
+HE57YSO: Trip completed successfully
+WZ14EWB: Trip completed successfully
+ID08GMV: Trip completed successfully
+ZM02EUX: Trip completed successfully
+OZ53PUX: Trip completed successfully
+QJ55HTR: Trip completed successfully
+ND53BHO: 2000 added successfully
+VS56SYX: Trip completed successfully
+JF15BCM: Trip completed successfully
+QJ55HTR: Trip completed successfully
+ZD04UKP: Trip completed successfully
+ZD04UKP: 1500 added successfully
+ZD04UKP: Trip completed successfully
+ZM02EUX: Trip completed successfully
+WZ14EWB: Trip completed successfully
+ES66WHE:makeTrip failed. CustomerAccount does not exist
+VB58LNG:makeTrip failed. CustomerAccount does not exist
+NK62WPC: Trip completed successfully
+KY09MDZ: Trip completed successfully
+KR60XNS: Trip completed successfully
+YJ55XPM: Trip completed successfully
+HC17NRJ: Trip completed successfully
+HH01VMY:makeTrip failed. CustomerAccount does not exist
+KY09MDZ: Trip completed successfully
+CJ65DVB: Trip completed successfully
+FM66JPE: Trip completed successfully
+NK62WPC: Trip completed successfully
+CB13IIZ: Trip completed successfully
+GV14RRM: Trip completed successfully
+ZM02EUX: Trip completed successfully
+JF15BCM: 1000 added successfully
+JF15BCM: Trip completed successfully
+KY09MDZ: Trip completed successfully
+VS56SYX: Trip completed successfully
+Total money made is £44425
+BUILD SUCCESSFUL (total time: 0 seconds)

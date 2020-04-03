@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    
+	<title>JSF Homepage</title>
+	<link rel = "stylesheet" href="/static/homepage.css">
+</head>
+
+<body>
+    <header>
+    <br><h1>JSF Cribs</h1><br>
+	<a href = "/"><div id = "logolocation"> <img src="/static/logo.png" alt="JSF Cribs Logo"> </div></a>
+	</header>
+    
+    <div id ="navloc">
+	<nav>
+    <ul>
+	<li><a href="#pe"><p>Gallery</p></a></li>
+	<li><a href="#c"><p>Contact</p></a></li>
+    <li><a href ="locAtt"> <p>Local Attraction </p></a></li>
+    <li><a href ="bookings"><p> Bookings </p></a></li>
+    <li><a href ="reviews"><p> Reviews </p></a></li>
+	</ul>	
+    </nav>
+    </div>
+    
+    
+	<div id="main">
+		<h2>Welcome to JSF Cribs!</h2>	
+		<p>This website is here to help you plan your perfect holiday. Relax at one of our many locations all over the beautiful island of Mauritius! So kick back, relax and let's plan this holiday.<br> Authentic lodge is the only eco tented glamping site in Mauritius. </p>
+        <h3>Authentic Lodge</h3>
+		<p>We are located on the East coast of Mauritius - one of the least developed part of the island, giving you the best nature experience that tourists are looking for. You will discover Mauritius differently with Authentic lodge. </p>
+        <p>Our restaurant will make you discover and taste the true Mauritian culinary. We provide a variety of food and our menu changes every day. </p>
+        <p>We have 2 types of tents: Authentic double and Authentic family. </p>
+        <p>Authentic double is equipped with a double bed or two single beds as well as a bathroom and private toilets. </p>
+        <p>Authentic family is equipped with a double bed and two or three single beds as well as a bathroom and private toilets. It accommodates a family of 2 adults and 2 or 3 children under 16 years. </p>
+		<h3>Activities</h3>
+		<p>Every morning our free shuttle boat will bring you to Ile aux Cerfs which is one of the most beautiful beaches of Mauritius. Our boat will leave Authentic lodge at 9.30am and it is a 30 minutes boat trip. From there you will discover or white sand and crystal clear water. Our boat will then bring you back to Authentic lodge at 1pm for lunch. </p>
+        <p>We also offer a variety of activities such as trekking, snorkelling, kitesurfing, kayaking and different island excursions. </p> 
+		<h3>Rates</h3>
+        <p>Rates are inclusive of VAT and include breakfast. </p>
+		<ul>
+        <li><p>Price per nights for an authentic double tent is Rs 4600 (£ 100)</p></li>
+        <li><p>Price per nights for an authentic family tent is Rs 6000 (£140)</p></li>
+		</ul>
+	
+	<center>
+	<h2 id="pe"> Gallery </h2>
+	<p> Here are some lovely pictures of the various locations we have to offer. </p>
+
+    
+    
+
+    
+    <script>
+    
+    // Script to get the gallery next and previous buttons to work
+    // Works by asssigning the photos to an array and then the buttons increase/decrease the current imgage counter to cycle through the pictures
+    
+    var images = new Array(7);  
+    images[0] = "/static/broom.jpg";
+    images[1] = "/static/broom1.jpg";
+    images[2] = "/static/dtent.jpg";
+    images[3] = "/static/ftent.jpg";
+    images[4] = "/static/med.jpg";
+    images[5] = "/static/public.jpg";
+    images[6] = "/static/tent.jpg";
+
+    var curimg = 0;
+
+  function  goback() {
+    var im=document.getElementById("image");
+    if(curimg>0)
+   {
+    im.src = images[curimg-1];
+    curimg = curimg - 1;
+   }else{
+    curimg = 7;
+   }
+
+
+}
+
+function gofwd(){
+var im=document.getElementById("image");
+    if(curimg < 7){
+    im.src = images[curimg+1];
+    curimg = curimg + 1;
+   }else{
+      curimg = 0;
+	  im.src = images[curimg]
+      }
+}
+    </script>
+    
+    
+	<img src="/static/broom.jpg" alt="Gallery" id="image" />
+	<br>
+	<input type="button" value="Previous" id="prev" name="prev" onclick="goback();" >
+	<input type="button" value="Next" id="next" name="next" onclick="gofwd();" >
+	</center>
+
+
+	<h2 id="c">Contact</h2>
+	<center>
+	<u><b>Email:</b></u> <a href="mailto:enquiries@jsfcribs.co.uk" target="_top">enquiries@jsfcribs.co.uk</a><br>
+    <u><b>Telephone:</b></u> 02085463591
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=otentic%20eco%20tent%20mauritius&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+	<a href="https://www.pureblack.de/webdesign-hannover/"></a></div>
+	<style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+	</div>	
+	</center>	
+	</div>
+
+
+
+<footer>
+© JSF Cribs
+</footer>	
+</body>
+
+</html>

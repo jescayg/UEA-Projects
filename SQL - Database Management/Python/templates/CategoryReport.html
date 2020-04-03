@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CategoryReport</title>
+</head>
+
+<body>
+    <p>{{error}}</p>
+    <h1>CategoryReport</h1>
+    <table border = 1>
+    <tr>
+        <th>CategoryName</th> <th>Number Of Books</th> <th>Average Price</th>
+    </tr>
+        {% for row in rows %}
+        <tr>
+            {% for item in row%}
+            <td>
+                {{item}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+    <form action = '/'>
+        <input type = "submit" value = "Home">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

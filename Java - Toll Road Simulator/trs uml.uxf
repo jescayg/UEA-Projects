@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>371</x>
+      <y>273</y>
+      <w>252</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Car
+--
+-numberOfSeats: int
+--
++Car(String reg, String manu, int numberOfSeats): ctor
++getNumbOfSeats(): int
+~calculateBasicTripCost(): int
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>462</y>
+      <w>448</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>CustomerAccount
+--
+-firstName: String
+-secondName: String
+-vehicle: Vehicle
+-accountBalance: int
+~DiscountType: discountType
+--
++CustomerAccount(String firstName, String secondName, Vehicle vehicle, int accountBalance): ctor
++getFirstName(): String
++getSecondName(): String
++getVehicle(): Vehicle
++getAccountBalance(): int
++getDiscountType(): discountType
++activateStaffDiscount(): void
++activateFriendsAndFamilyDiscount(): void
++deactivateDiscount(): void
++addFunds(int amount): void
++makeTrip(): int
++compareTo(CustomerAccount acc): int
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>777</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>CustomerNotFoundException
+--
+--
++CustomerNotFoundException(): ctor
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>238</x>
+      <y>896</y>
+      <w>259</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>InsufficientAccountBalanceException
+--
+--
++InsufficientAccountBalanceException(): ctor
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>637</x>
+      <y>798</y>
+      <w>273</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>TollRoad
+--
+-moneyMade: int
+~Customers = new ArrayList(): ArrayList&lt;CustomerAccount&gt;
+--
++getMoneyMade(): int
++getCustomers(): ArrayList&lt;CustomerAccount&gt;
++addCustomer(CustomerAccount acc): void
++findCustomer(String regNumb): CustomerAccount
++chargeCustomer(String registrationNumber): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1183</x>
+      <y>833</y>
+      <w>182</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>TollRoadMain
+--
+--
++initialiseTollRoadFromFile(): TollRoad
++simulateFromFile(TollRoad road): void
++main(String args[]): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>742</x>
+      <y>77</y>
+      <w>245</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Truck
+--
+-numTrailers: int
+--
++Truck(String reg, String manu, int numTrailers): ctor
+-getNumTrailers(): int
+~calculateBasicTripCost(): int
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>273</y>
+      <w>203</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Van
+--
+-payload: int
+--
++Van(String reg, String manu, int load): ctor
++getPayload(): int
+~calculateBasicTripCost(): int
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>742</x>
+      <y>259</y>
+      <w>238</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>/Vehicle/
+--
+-regNumb: String
+-manufacturer: String
+--
++Vehicle(String regNumb, String manufacturer): ctor
+~calculateBasicTripCost(): int
++getRegNumb(): String
++getManufacturer(): String
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>812</x>
+      <y>175</y>
+      <w>21</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>315</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>994</x>
+      <y>301</y>
+      <w>105</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>854</x>
+      <y>392</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>532</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+discountType
+--
+NONE
+STAFF
+FRIENDS_AND_FAMILY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>518</x>
+      <y>560</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>763</x>
+      <y>721</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>483</x>
+      <y>805</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;throws&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>903</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;throws&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>105</x>
+      <y>847</y>
+      <w>98</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Java.lang.exception</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>798</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>147</x>
+      <y>875</y>
+      <w>91</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>868</y>
+      <w>252</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;340.0;10.0</additional_attributes>
+  </element>
+</diagram>

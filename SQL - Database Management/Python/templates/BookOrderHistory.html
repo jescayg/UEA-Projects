@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookOrderHistory</title>
+</head>
+
+<body>
+    <p>{{error}}</p>
+    <h1>BookOrderHistory</h1>
+    <table border = 1>
+    <tr>
+        <th>Book ID</th> <th>Title</th> <th>Price</th> <th>ShopOrder ID</th>
+        <th>Quantity</th> <th>Unit Selling Price</th> <th>OrderDate</th> <th>Name</th> <th>ShopOrderID</th>
+    </tr>
+        {% for row in rows %}
+        <tr>
+            {% for item in row%}
+            <td>
+                {{item}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+    <form action = '/'>
+        <input type = "submit" value = "Home">
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

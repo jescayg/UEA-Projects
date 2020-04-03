@@ -1,0 +1,16 @@
+<style>
+    body {margin: 0; padding: 50px; background-color:powderblue;}
+    header {border: 5px solid red; height: 150px; background-color: AntiqueWhite;}
+    nav {border: 2px solid blue; background-color: pink; font-size: large;}
+    footer {border: 2px solid green; background-color: honeydew; text-align: center; font-family: Helvetica,Arial,sans-serif;}
+    div#main {border: 2px solid yellow; padding-left: 30px; padding-right: 30px;}
+	h1 {font-family: Helvetica,Arial,sans-serif; text-align: center; font-size: xx-large;}
+    h2 {font-family: Helvetica,Arial,sans-serif; text-align: center; font-size: x-large; color:darkorange; font-style: italic; text-decoration: underline;}
+    h3 {font-family: Helvetica,Arial,sans-serif; text-align: center; font-size: large;}
+    p {font-family: Helvetica,Arial,sans-serif; font-size: medium; }
+    #logolocation {position: absolute;top: 15px; right: 12px}
+    #navloc{float: left; width: 8em;}
+    #main{margin-left: 8.1em;}
+	.center {display: block; margin-left: auto; margin-right: auto;  width: 50%;}
+   div#website {resize: both; overflow: auto;}
+</style>

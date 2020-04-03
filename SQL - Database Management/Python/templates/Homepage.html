@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>  
+    <head>    
+        <title>Database Assignment</title>    
+    </head>  
+<body>
+    {{ error }}
+        {{msg}}
+    <h1>Database Assignment</h1>
+<h2> Add A Category</h2>
+<p> Enter CategoryID, Name and Type </p>
+    <form action= "AddCategory" method="post">
+        <input type="text" name="category_id" placeholder="Category ID">
+        <input type="text" name="category_name" placeholder="Category Name">
+        <input type="text" name="category_type" placeholder="Category Type">
+        <input type="submit" value="Submit" />
+    </form>
+<h2>Delete A Category</h2>
+<p>Enter the Category to be removed</p>
+    <form action="DeleteCategory" method="post">
+        <input type="text" name="category_id" placeholder="Category ID">
+        <input type="submit" value="Remove" />
+    </form>
+<h2>Summary Report Of Categories</h2>
+    <form action="CategoryReport" method = "get">
+        <input type="submit" value="Submit" />
+    </form>
+<h2>Book Order History Summary</h2>
+        <form action="BookOrderHistory" method="post">
+            <input type="text" name="bookID">
+            <input type="submit" value="Submit"/>
+        </form>
+
+
+</html>
+ 
